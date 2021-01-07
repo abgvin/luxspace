@@ -33,23 +33,23 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <!-- START: HEADER -->
+    <!-- START: Header -->
     <header class="absolute w-full z-50 px-4">
       <div class="container mx-auto py-10">
         <div class="flex flex-stretch items-center">
           <div class="w-56 flex items-center">
             <img
-              src="images/design/logo.svg"
-              alt="luxSpace - Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
+              src="./images/design/logo.svg"
+              alt="Luxspace - Adalah sebuah website yang menjual barang-barang kece"
             />
           </div>
-
           <div class="w-full"></div>
 
-          <!-- MENU HAMBURGER WRAPPER -->
+          <!-- START: menu hamburger wrapper -->
           <div class="w-auto">
             <ul
-              class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+              id="menu"
+              class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100"
             >
               <li class="mx-3 py-6 md:py-0">
                 <a href="#" class="text-black hover:text-white hover:underline"
@@ -58,7 +58,7 @@
               </li>
               <li class="mx-3 py-6 md:py-0">
                 <a href="#" class="text-black hover:text-white hover:underline"
-                  >Catalogue</a
+                  >Catalog</a
                 >
               </li>
               <li class="mx-3 py-6 md:py-0">
@@ -68,19 +68,19 @@
               </li>
               <li class="mx-3 py-6 md:py-0">
                 <a href="#" class="text-black hover:text-white hover:underline"
-                  >Reward</a
+                  >Rewards</a
                 >
               </li>
             </ul>
           </div>
-          <!-- END MENU HAMBURGER WRAPPER -->
+          <!-- END: menu hamburger wrapper -->
 
           <div class="w-auto">
             <ul class="flex items-center">
               <li class="ml-6 block md:hidden">
                 <button
                   id="menu-toggler"
-                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black hover:text-white focus:outline-none"
+                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black focus:outline-none"
                 >
                   <svg
                     class="fill-current"
@@ -104,8 +104,9 @@
               </li>
               <li class="ml-6">
                 <a
-                  href="#"
-                  class="flex items-center justify-center w-8 h-8 text-black hover:text-white"
+                  id="header-cart"
+                  href="cart.html"
+                  class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled"
                 >
                   <svg
                     class="fill-current"
@@ -126,19 +127,18 @@
                     />
                     <path
                       d="M18.9414 11.1324H10.8089C10.4572 11.1324 10.1721 11.4223 10.1721 11.78C10.1721 12.1377 10.4572 12.4276 10.8089 12.4276H18.9413C19.293 12.4276 19.5781 12.1377 19.5781 11.78C19.5781 11.4224 19.293 11.1324 18.9414 11.1324Z"
-                      fill="black"
                     />
                     <path
                       d="M25.6499 4.88404C25.407 4.58092 25.0472 4.40711 24.6626 4.40711H4.82655L4.42595 2.42947C4.34232 2.01694 4.06563 1.67055 3.68565 1.50276L0.890528 0.268963C0.567841 0.126419 0.192825 0.276999 0.0528584 0.60505C-0.0872597 0.933204 0.0608116 1.31463 0.383347 1.45696L3.17852 2.69081L6.2598 17.9014C6.38117 18.5004 6.90578 18.9352 7.50723 18.9352H22.7635C23.1152 18.9352 23.4003 18.6452 23.4003 18.2876C23.4003 17.9299 23.1152 17.64 22.7635 17.64H7.50728L7.13247 15.7897H22.8814C23.4828 15.7897 24.0075 15.3549 24.1288 14.7559L25.9101 5.96349C25.9876 5.58063 25.8928 5.1871 25.6499 4.88404ZM22.8814 14.4946H6.87012L5.08895 5.70226L24.6626 5.70231L22.8814 14.4946Z"
-                      fill="black"
                     />
-                    <circle
-                      cx="25"
-                      cy="4.89023"
-                      r="4"
-                      fill="#F9CADA"
-                      class="cart-filled"
-                    />
+                    <g class="text-pink-400">
+                      <circle
+                        cx="25"
+                        cy="4.89023"
+                        r="4"
+                        class="fill-current dot"
+                      />
+                    </g>
                   </svg>
                 </a>
               </li>
@@ -147,17 +147,16 @@
         </div>
       </div>
     </header>
-    <!-- END: HEADER -->
+    <!-- END: Header -->
 
-    <!-- START: HERO SECTION -->
+    <!-- START: Section Hero -->
     <section class="flex items-center hero">
-      <!-- START: LEFT HERO -->
+      <!-- START: Section Hero | Left side -->
       <div
         class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
       >
         <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
-          The Room <br class="" />
-          You've Dreaming
+          The Room <br class="" />You've Dreaming
         </h1>
         <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
           Kami menyediakan furniture berkelas yang
@@ -168,21 +167,33 @@
           <a
             href="#browse-the-room"
             class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
+            >Explore Now</a
           >
-            Explore Now
-          </a>
         </div>
       </div>
-      <!-- END: LEFT HERO -->
+      <!-- END: Section Hero | Left side -->
       <div class="w-full inset-0 md:relative md:w-1/2">
-        <div class="realtive hero-image">
-          <div class="overlay inset-0 bg-black opacity-30 z-10">
-            <div class="overlay right-0 bottom"></div>
+        <div class="relative hero-image">
+          <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
+          <div class="overlay right-0 bottom-0 md:inset-0">
+            <button
+              class="video hero-cta focus:outline-none z-30 modal-trigger"
+              data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
+              <div class="absolute w-full h-full">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FniJvUiVprg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>'
+            ></button>
           </div>
+          <img
+            class="absolute inset-0 md:relative w-full h-full object-cover object-center"
+            src="images/content/image-hero.jpg"
+            alt="House with sofa and some plants"
+          />
         </div>
       </div>
     </section>
-    <!-- END: HERO SECTION -->
+    <!-- END: Section Hero -->
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
