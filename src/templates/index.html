@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <title>luxSpace</title>
-    <meta name="description" content="Kami menyediakan furniture berkelas yang membuat ruangan terasa homey" />
+    <meta
+      name="description"
+      content="Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="luxSpace" />
-    <meta property="og:description" content="Kami menyediakan furniture berkelas yang membuat ruangan terasa homey" />
+    <meta
+      property="og:description"
+      content="Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
+    />
     <meta property="og:url" content="https://luxspace.com" />
-    <meta property="og:image" content="https://luxspace.com/images/content/preview-homepage.jpg" />
+    <meta
+      property="og:image"
+      content="https://luxspace.com/images/content/preview-homepage.jpg"
+    />
 
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="images/favicon.ico" />
@@ -24,7 +33,7 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <!-- HEADER -->
+    <!-- START: HEADER -->
     <header class="absolute w-full z-50 px-4">
       <div class="container mx-auto py-10">
         <div class="flex flex-stretch items-center">
@@ -34,7 +43,9 @@
               alt="luxSpace - Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
             />
           </div>
+
           <div class="w-full"></div>
+
           <!-- MENU HAMBURGER WRAPPER -->
           <div class="w-auto">
             <ul
@@ -136,7 +147,42 @@
         </div>
       </div>
     </header>
-    <!-- END OF HEADER -->
+    <!-- END: HEADER -->
+
+    <!-- START: HERO SECTION -->
+    <section class="flex items-center hero">
+      <!-- START: LEFT HERO -->
+      <div
+        class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
+      >
+        <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+          The Room <br class="" />
+          You've Dreaming
+        </h1>
+        <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+          Kami menyediakan furniture berkelas yang
+          <br class="hidden lg:block" />
+          membuat ruangan terasa homey
+        </h2>
+        <div>
+          <a
+            href="#browse-the-room"
+            class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
+          >
+            Explore Now
+          </a>
+        </div>
+      </div>
+      <!-- END: LEFT HERO -->
+      <div class="w-full inset-0 md:relative md:w-1/2">
+        <div class="realtive hero-image">
+          <div class="overlay inset-0 bg-black opacity-30 z-10">
+            <div class="overlay right-0 bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: HERO SECTION -->
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
